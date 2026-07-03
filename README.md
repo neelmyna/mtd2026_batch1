@@ -198,16 +198,22 @@ git pull origin main
 ## Steps to Push:
 
 1. We must 1st tell the git to list the names of the files and folders which are either modified or created or deleted.
+
 ```bash
 git add <PATH>
+git restore --staged .
 ```
 
-2. Next step is to commit:  Here, the git will create an object and save content of all the files from Step1 into the object and encript the object.
+To unlist/unstage the staged files, use the above command.
+
+2. Next step is to commit: Here, the git will create an object and save content of all the files from Step1 into the object and encript the object.
+
 ```bash
 git commit -m "MESSAGE"
 ```
 
 3. push
+
 ```bash
 git push origin <branch name>
 git push origin main
@@ -219,6 +225,7 @@ This is a default branch.
 Hence, both the above 2 commands are one at the same.
 
 ## Steps to create Personal Access Token:
+
 1. Click on profile icon (top right corner)
 2. Click settings from the list
 3. In next page, scroll down and click developer settings (bottom left corner)
@@ -229,7 +236,11 @@ Hence, both the above 2 commands are one at the same.
 8. In the list of options, selct the 1st check box Repo
 9. Scroll down and click generate token
 10. Copy the PAT and mail it to yourself (from one of your gmail to another or same) with mail subject and body as "git pat" and "git_pat" respectively.
--------------------------------------------------------------------------------
+
+---
+
+DAY2 FRIDAY 03-07-2026
+
 ## GIT CONFIGURATION COMMANDS
 
 ```bash
@@ -239,8 +250,135 @@ git config --global user.email "abc@xyz.com"
 ```
 
 To clone Repo using PAT:
+
 ```bash
 git clone <Repo_URI>
 git clone https://github.com/username/repo_name
 git clone https://PAT@github.com/username/repo_name
 ```
+
+Data is most important. It is the sole reason for programming and even for existance of computers.
+Refer notes/data_categories.png
+
+### Assigment1 given.
+
+## How numbers are stored:
+
+Unsigned Numbers:
+
+The number you should just convert to Binary
+For example if the number is 125
+1000
+1*2(3) + 0*2(2) + 0*2(1) + 0*2(0) = 8
+10000 16
+100000 32
+1000000 64
+1100000 64 + 32 = 96
+1110000 64 + 32 + 16 = 112
+1111101 64 + 32 + 16 + 8 = 125
+So when we try to store 125 (a decimal number, i.e. Base-10 number) in Binary, what gets stores is 1111101
+
+When we say the distance from Mys to Blr is 145, what we mean is:
+1*10(2) + 4*10(1) + 5\*10(0)
+100 + 40 + 5 = 145
+
+So to store 125 we need 7 bits
+To store 5 we need 3 bits
+To store 20 we need 5 bits.
+However, we need disciplene.
+Hence we consider
+4 bits (Nibble)
+8 bits (Byte)
+16 bits
+32 bits word size
+64 bits word size
+
+## Assignment2 give.
+
+In 1 bit we can store how many values?
+2 values (0 or 1)
+In 2 bits we can store 4 different values
+So in n bits we can store 2-power-n values
+Thus in 4 bits we can store 16 values, which is 0 to 15 (if unsigned)
+16 values are also called as HexaDecimal, 0 to f where f is 15
+
+If signed in 4 bits the values we can store are:
+-8 to +7 which is 16 values
+
+## HOW NEGETIVE NUMBERS ARE STORED:
+
+n = -21
+Take absolute of the number -21, which is 21
+Now convert it to binary
+0001 0101
+
+1110 1010 (1s compliment)
+1
+1110 1011 (2s compliment)
+Observe that the MSB (1st from the left) is 1
+In signed numbers, the MSB is always sign bit. It tells sign of the number. If MSB is 1, then the number is -ve otherwise +ve.
+
+Thus, how -21 is stored?
+11101011
+-1 * 2(7) + 1*2(6) + 1\*2(5) + 11
+-128 + 64 + 32 + 11
+-64 + 43
+-21
+
+## Assignment3 given
+
+DataTypes in Java:
+Primitive:
+Integer Types:
+byte 1 byte
+short 2 bytes
+int 4 bytes
+long 8 bytes
+Number with precission:
+float 4 bytes
+double 8 bytes
+boolean 1 bit
+char 2 bytes (Unicode characters)
+reference types (That store reference value of an object)
+
+Datatypes in Python:
+int
+float
+bool
+str
+chr
+Note that in Python, every datatype is of some class. Thus every data in Python is an object.
+
+# OPERATORS:
+
+## Arithmetic Operators:
+
+```
+ + - % * /
+      ** // (Addition to Python)
+```
+
+All Arithmetic operators are binary operators. That is, they need 2 operands/values
+The syntax of the language necessitates us to use the operators in INFIX notation (put the operator inbetyween operands)
+
+The compiler (of any language) always compiles the instructions line by line (top to bottom) and each instruction from left to right.
+However, the execution machine may not evaluate the instructions or expressions left to right. It may also be right to left.
+
+The Arithmetic expression are by default evaluated from left to right. However, this is overridden by precedence of operators. Thus, the operation with highest precedence is evaluated 1st.
+
+For example,
+5 - 6 + 3
+Here, 5 - 6 is evaluated 1st. Because the precedence/priority of + and - are same.
+
+4 + 7 / 2
+Here, 7/2 is evaluated 1st. and then the quotient is added to 4.
+
+2 ** 3 ** 2
+Here, the power operator (w.r.t. Python) has right to left associtivity. Thus the above expression evaluates to 512 and not 64
+
+In Java, to accomplish this, we must use Math.pow()
+
+The I/P to Arithmetic operators are numbers
+The O/P is number
+
+Though the we write the expression in Infix notation, the evaluation is done by the execution machine only after converting the infix expression into postfix.

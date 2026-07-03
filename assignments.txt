@@ -7,3 +7,6 @@ What is word size.
 For example, 64bit OS
 When we download any App, It shows 64x. What it is ?
 
+Assigment3:
+Write a program to check if a number is saved using little endian moment or big endian moment.
+
