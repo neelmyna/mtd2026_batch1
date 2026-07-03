@@ -1,0 +1,9 @@
+Assigment1:
+little endian moment (From LSB to MSB)
+big endian moment	 (From MSB to LSB)
+
+Assigment2:
+What is word size.
+For example, 64bit OS
+When we download any App, It shows 64x. What it is ?
+
