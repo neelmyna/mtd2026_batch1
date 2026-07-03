@@ -210,4 +210,37 @@ git commit -m "MESSAGE"
 3. push
 ```bash
 git push origin <branch name>
+git push origin main
+git push
+```
+
+Note that when ever we create a repo, it will always have one branch namely **main**
+This is a default branch.
+Hence, both the above 2 commands are one at the same.
+
+## Steps to create Personal Access Token:
+1. Click on profile icon (top right corner)
+2. Click settings from the list
+3. In next page, scroll down and click developer settings (bottom left corner)
+4. Next page, on left, click personal access tokens, select tokens classic
+5. Next page, click generate new token classic
+6. Next page, give a notes
+7. Select expiry: No expiry
+8. In the list of options, selct the 1st check box Repo
+9. Scroll down and click generate token
+10. Copy the PAT and mail it to yourself (from one of your gmail to another or same) with mail subject and body as "git pat" and "git_pat" respectively.
+-------------------------------------------------------------------------------
+## GIT CONFIGURATION COMMANDS
+
+```bash
+git config --global user.name "neelmyna"
+
+git config --global user.email "abc@xyz.com"
+```
+
+To clone Repo using PAT:
+```bash
+git clone <Repo_URI>
+git clone https://github.com/username/repo_name
+git clone https://PAT@github.com/username/repo_name
 ```
