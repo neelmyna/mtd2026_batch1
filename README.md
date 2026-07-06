@@ -382,3 +382,104 @@ The I/P to Arithmetic operators are numbers
 The O/P is number
 
 Though the we write the expression in Infix notation, the evaluation is done by the execution machine only after converting the infix expression into postfix.
+
+When the operands are of different types the operand with lower sized data type is 1st implicitly converted to the type of the other operand and only then the operation is completed.
+5 + 5.5
+Here 5.5 is double and 5 is int. Hence, 1st, 5 is converted from int to double
+
+13 + 7
+1101
+0111
+
+---
+
+DAY3 06-07-2026
+
+W.R.T JAVA:
+int num = 40 / 7;
+s.o.p(num); // 5
+
+float num = 40 / 7;
+s.o.p(num); // 5.0
+
+int num = 40 / 7.0;
+s.o.p(num); // 5
+
+Assigment4 given.
+
+## RELATIIONAL OPERATORS:
+
+> < >= <= != ==
+
+I/P are numbers
+O/P is boolean
+All relational operators are binary
+Relational operators have lower precedence than Arithmetic operators, but higher than logical operators.
+Note that assignment operator has the least precedence.
+The operator having lower precedence than the assignment operator is the post increment or post decrement operator.
+num = 5
+result = num++;
+Here the value of num is assigned to result 1st. And then num is incremented.
+
+Assignment5 given.
+Assignment6 given.
+
+Closed Interval
+[10, 20] From 10 till 20 (end values are included)
+i >= 10 and i <= 20
+Open Interval
+(20, 40) From 21 till 39 (end value are not included)
+i > 20 and i < 40
+(15, 25] Left Open. From 16 to 25
+i > 15 and i <= 25
+
+for(int i = 1; i <= 10 i++)
+for(int i = 1; i < 11 i++)
+
+Assignment7 given:
+
+LOGICAL OPERATORS:
+& | ! && ||
+In python there are only short circuted operators
+
+I/P are boolean (They are actually outcome of the conditions)
+O/P is boolean
+
+int a = 3, b = 5, c = 10;
+if (a-- <= b || b++ != c)
+print('Mysuru');
+else
+print('Hunasuru');
+print(a, b, c);
+
+int a = 3, b = 5, c = 10;
+if (a-- <= b | b++ != c)
+print('Mysuru');
+else
+print('Hunasuru');
+print(a, b, c);
+
+int x = 4, y = 5, z = 1;
+x++;
+s.o.p(x, y, z);
+++x;
+s.o.p(x, y, z);
+y = z++;
+s.o.p(x, y, z);
+x = ++y;
+s.o.p(x, y, z);
+z = x++ + ++x;
+s.o.p(x, y, z);
+
+Bit Wise Operators:
+~ ^ >> << | &
+
+PROBLEM ON BIT WISE OPERATORS (PENDING)
+
+4 + 7 - 2 + 1
+x = y
+
+**
+3 ** 2
+
+obj1.x_axis p(3, 4)

@@ -10,3 +10,15 @@ When we download any App, It shows 64x. What it is ?
 Assigment3:
 Write a program to check if a number is saved using little endian moment or big endian moment.
 
+Assigment4:
+How floating point numbers are stored using IEEE standards?
+Write program to know the above concept if available.
+
+Assignment5:
+Why there are no ++ and -- operators in Python?
+
+Assignment6:
+Do all relational operators have same precedence or do they have different precedences?
+
+Assignment7:
+What are the minimum relational operators using which all other relational operators can be implemented?
