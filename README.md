@@ -483,3 +483,45 @@ x = y
 3 ** 2
 
 obj1.x_axis p(3, 4)
+
+---
+
+## DAY4 TUESDAY 07-07-2026
+
+int number = 10;
+Here the varibale `number` is primitive. That is, it has the only data 10 and nothing else.
+int array[10];
+Here the `array` w.r.t. C/C++ has 10 int elements and nothing else. Thus, this is also primitive.
+
+int[] array = new int[10];
+Here the `array` w.r.t. Java, is not just primitive. But it is an object.
+
+## High Cohesion (SRP)
+
+One Solution must solve only one problem at a time.
+Do One job at a time.
+
+`SOLID Principles`
+
+int number; // generic information
+int age; // specific information
+int student_age; // specialized information
+
+class StudentAge {
+int age;
+int maxAge;
+int minAge;
+}
+
+StudentAge vtu_age; 18 and 60
+StudentAge jntu_age; 16 and 80
+
+---
+
+1. Check if a year is Leap year
+2. Find if a number is Perfect Square
+3. Accept the average score from the user and print the result as follows:
+   0 to 49 Fail
+   50 to 69 Second Class
+   70 to 89 First Class
+   90 to 100 Distiction
