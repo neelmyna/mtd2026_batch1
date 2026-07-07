@@ -525,3 +525,15 @@ StudentAge jntu_age; 16 and 80
    50 to 69 Second Class
    70 to 89 First Class
    90 to 100 Distiction
+
+## STEPS TO SOLVE A PROBLEM:
+
+### 1. Understand the problem. Isolate/Remove the unwanted information. Unambigiously assertain the I/P Data and recognise what is the O/P Data. Also remember the relevant/important information.
+
+### 2. Build the solution. Using trail and error method or using any specific algorithm or formula. But never using any programming concepts.
+
+### 3. Write the fake code (pseudocode).
+
+### 4. (OPTIONAL) Validate/test/verify the pseudocode. Also check if there can be a better solution by examining the efficiencies. Lastly see if the code/solution can be optimized.
+
+### 5. Code it
