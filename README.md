@@ -532,11 +532,14 @@ StudentAge jntu_age; 16 and 80
 
 ### 2. Build the solution. Using trail and error method or using any specific algorithm or formula. But never using any programming concepts.
 
-### 3. Write the fake code (pseudocode).
+### 3. Write the Algorithm. Step by step procedure.
+Each step must be finite, simple and unambigious and must follow SRP.
 
-### 4. (OPTIONAL) Validate/test/verify the pseudocode. Also check if there can be a better solution by examining the efficiencies. Lastly see if the code/solution can be optimized.
+### 4. Write the fake code (pseudocode).
 
 ### 5. Code it
+
+### 6. (OPTIONAL) Validate/test/verify the pseudocode. Also check if there can be a better solution by examining the efficiencies. Lastly see if the code/solution can be optimized.
 
 Assignment8 given.
 
