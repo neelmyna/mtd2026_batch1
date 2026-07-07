@@ -537,3 +537,26 @@ StudentAge jntu_age; 16 and 80
 ### 4. (OPTIONAL) Validate/test/verify the pseudocode. Also check if there can be a better solution by examining the efficiencies. Lastly see if the code/solution can be optimized.
 
 ### 5. Code it
+
+Assignment8 given.
+
+Machine Language
+Human friendly language (assembly language)
+Domain Oriented languages (Cobol, Fortran)
+There were only domain oriented languages.
+Domain friendly languages (C, Pasacal)
+OOPL (C++, C with classes, Simula67)
+
+C++ = C + OO
+Used inheritance to give the increment OO concepts to C and thus C++ came into existance.
+
+Thus every C program is also a C++ program. But the other way is not correct.
+Because C++ is super set and C is sub set of C++
+
+C++ had some flaws (friend, inhetir by private, global variables and functions, operatr overloading, objects in Stack area)
+For the above issues, experts wanted a Strict OOPL
+Thus Java was introduced.
+
+Assignment9 given.
+Assignment10 given.
+Assignment11 given.

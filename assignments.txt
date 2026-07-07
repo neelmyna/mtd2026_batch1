@@ -22,3 +22,16 @@ Do all relational operators have same precedence or do they have different prece
 
 Assignment7:
 What are the minimum relational operators using which all other relational operators can be implemented?
+
+Assignment8:
+What is Pythonic ? What is Pep3 ?
+
+Assignment9:
+Evolution of programming languages.
+
+Assignment10:
+Why there is no function overloading in Python?
+
+Assignment11:
+Why there is no implicit type casting in Python?
+
