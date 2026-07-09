@@ -1,0 +1,232 @@
+Here are **5 challenging `if-else` programming problems**. These require students to think carefully about conditions and edge cases. They are designed to be solved **without loops or functions** (unless you choose to add them).
+
+---
+
+# 1. Electricity Bill Calculator
+
+An electricity company charges as follows:
+
+| Units Consumed  | Rate per Unit |
+| --------------- | ------------: |
+| First 100 units |         ₹2.50 |
+| Next 100 units  |         ₹4.00 |
+| Next 100 units  |         ₹6.00 |
+| Above 300 units |         ₹8.00 |
+
+Additional rules:
+
+* If the total bill exceeds ₹1500, apply a **10% discount**.
+* If units consumed are **0 or negative**, print **"Invalid Input"**.
+* If the final bill is less than ₹100, charge a **minimum bill of ₹100**.
+
+**Example**
+
+```
+Input:
+350
+
+Output:
+Total Bill = ₹1557.00
+Discount Applied = ₹173.00
+Final Bill = ₹1384.00
+```
+
+**Concepts Tested:**
+
+* Nested if-else
+* Range checking
+* Arithmetic calculations
+
+---
+
+# 2. Income Tax Calculator
+
+Calculate income tax using the following slabs:
+
+| Annual Income         |    Tax |
+| --------------------- | -----: |
+| Up to ₹3,00,000       | No Tax |
+| ₹3,00,001–₹7,00,000   |     5% |
+| ₹7,00,001–₹10,00,000  |    10% |
+| ₹10,00,001–₹15,00,000 |    20% |
+| Above ₹15,00,000      |    30% |
+
+Additional rules:
+
+* Senior citizens (age ≥ 60) get **₹50,000 extra exemption**.
+* If tax exceeds ₹2,00,000, add **4% cess**.
+* Invalid if age < 18.
+
+**Input**
+
+```
+Income
+Age
+```
+
+Print the final tax amount.
+
+---
+
+# 3. Triangle Analyzer
+
+Read three sides of a triangle.
+
+Determine:
+
+1. Is it a valid triangle?
+2. If valid, identify whether it is:
+
+   * Equilateral
+   * Isosceles
+   * Scalene
+3. Also determine whether it is:
+
+   * Right-angled
+   * Acute-angled
+   * Obtuse-angled
+
+If not valid, print:
+
+```
+Invalid Triangle
+```
+
+**Example**
+
+```
+Input
+3
+4
+5
+
+Output
+Valid Triangle
+Scalene
+Right Angled
+```
+
+**Hint:** Compare the square of the longest side with the sum of the squares of the other two sides.
+
+---
+
+# 4. Online Shopping Discount System
+
+A customer enters:
+
+* Total purchase amount
+* Membership type
+
+  * Gold
+  * Silver
+  * None
+* Coupon available? (Yes/No)
+
+Apply discounts in this order:
+
+### Membership
+
+* Gold → 20%
+* Silver → 10%
+* None → 0%
+
+### Coupon
+
+* Yes → Additional 5%
+* No → 0%
+
+### Extra Offer
+
+If the bill after discounts is above ₹5000:
+
+* Free Shipping
+
+Otherwise
+
+* Shipping Charge ₹150
+
+Print
+
+* Original Amount
+* Membership Discount
+* Coupon Discount
+* Shipping
+* Final Payable Amount
+
+---
+
+# 5. University Admission Eligibility
+
+A student enters marks in:
+
+* Mathematics
+* Physics
+* Chemistry
+* English
+
+Admission rules:
+
+1. Every subject must be **at least 40 marks**.
+2. Average must be at least **65%**.
+3. Mathematics must be at least **75**.
+4. Physics + Chemistry average must be at least **70**.
+
+If eligible:
+
+Assign a scholarship.
+
+| Average   |  Scholarship |
+| --------- | -----------: |
+| ≥90       |         100% |
+| 85–89.99  |          75% |
+| 80–84.99  |          50% |
+| 65–79.99  |          25% |
+| Otherwise | No Admission |
+
+Print either:
+
+```
+Eligible
+Scholarship = 50%
+```
+
+or
+
+```
+Not Eligible
+Reason: Mathematics marks below required minimum.
+```
+
+---
+
+## Bonus Challenge (Interview-Level)
+
+### Loan Approval System
+
+Inputs:
+
+* Age
+* Monthly Salary
+* Existing Loan EMI
+* Credit Score
+* Years of Employment
+
+Rules:
+
+* Age: 21–60
+* Salary ≥ ₹30,000
+* EMI ≤ 40% of salary
+* Credit Score ≥ 700
+* Employment ≥ 2 years
+
+If approved, determine the maximum loan amount:
+
+* Credit Score ≥ 800 → 30 × Monthly Salary
+* 750–799 → 24 × Monthly Salary
+* 700–749 → 18 × Monthly Salary
+
+Otherwise, reject the application and print the **first reason** for rejection.
+
+---
+
+These problems require students to combine multiple conditions, nested `if-else` statements, logical operators (`and`, `or`, `not`), relational operators, arithmetic, and careful ordering of decisions—the kinds of skills often tested in university exams and coding interviews.

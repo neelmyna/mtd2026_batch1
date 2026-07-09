@@ -533,6 +533,7 @@ StudentAge jntu_age; 16 and 80
 ### 2. Build the solution. Using trail and error method or using any specific algorithm or formula. But never using any programming concepts.
 
 ### 3. Write the Algorithm. Step by step procedure.
+
 Each step must be finite, simple and unambigious and must follow SRP.
 
 ### 4. Write the fake code (pseudocode).
@@ -563,3 +564,10 @@ Thus Java was introduced.
 Assignment9 given.
 Assignment10 given.
 Assignment11 given.
+
+---
+
+DAY7 THURSDAY 09-07-2026
+
+Formatting the output is taught.
+Assignment12 given.
