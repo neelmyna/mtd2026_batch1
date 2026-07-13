@@ -24,7 +24,7 @@ Assignment7:
 What are the minimum relational operators using which all other relational operators can be implemented?
 
 Assignment8:
-What is Pythonic ? What is Pep3 ?
+What is Pythonic ? What is PepX ?
 
 Assignment9:
 Evolution of programming languages.
@@ -46,4 +46,6 @@ Assignment12:
     6.Print distinct Composite digits in a number
     7.Find sum of Odd digits in a number
     8.Find sum of Even placed digits in a number
-    9.Find Odd placed Even digits in a number
+    9.Find sum of Odd placed Even digits in a number
+    10.Find mid digit of the given number.
+    11.Lucky digit problem

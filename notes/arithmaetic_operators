@@ -1,0 +1,17 @@
+## Arithmetic Operators
+
+- All Arithmetic operators are binary operators.
+
+- The syntax of the language necessitates us to use the operators in INFIX notation.
+
+- Default evaluation is Left to Right (Associtivity).
+
+- Default Associtivity is overridden by Precedence of Operators.
+
+- The I/P to Arithmetic operators are numbers.
+
+- O/P is also a number
+
+- The evelaution of Arithmetic expressions are done only after converting them into Postfix notation.
+
+- If operands are different types, say, double + int (5.5 + 12) then implicit casting happens 1st.

@@ -577,6 +577,121 @@ Assignment12 given.
 DAY8 FRIDAY 10-07-2026
 Functions
 Call Stack
+PDB
 match-case
 Problem solving on Loops/iterations
 range function with yield
+
+l1 = [1,2,3,4,5]
+l2 = [6,7,8,9,0]
+l1.extend(l2)
+print(len(l1)) # 10
+print(l1) # [1,23,4,5,6,7,8,9,0]
+
+l1 = [1,2,3,4,5]
+l2 = [6,7,8,9,0]
+l1.append(l2)
+print(len(l1)) # 6
+print(l1) # [1,2,3,4,5, [6,7,8,9,0] ]
+l1[5][2]
+
+i = -1
+i -= -1
+i -= x
+i = i - x
+i = i - (-1)
+i = -1 +1
+i = 0
+
+Find sum of Even digits of a number
+
+```
+n = int(input())
+sum_of_even_digits = 0
+while n != 0:
+  digit = n % 10 # extract digit at one's place
+  if digit % 2 == 0:
+    sum_of_even_digits += digit
+print(sum)
+print(digit) # NameError
+```
+
+Find sum of Even Placed digits
+n = 2354615 # odd number of digits
+n = 4576 # even number of digits
+flip = True
+If flip remains True after completion of the loop, then the number has even number of digits.
+
+```
+sum1 = 0
+sum2 = 0
+flip = True
+while n != 0:
+  digit = n % 10
+  n = n // 10
+  if digit % 2 == 0:
+    if flip:
+      sum1 += digit
+    else:
+      sum2 += digit
+  flip = not flip # !flip
+if !flip:
+  print(f'Sum of Odd placed Even digits is {sum1}')
+else:
+  print(f'Sum of Odd placed Even digits is {sum2}')
+```
+
+## Functions:
+
+Functions are used to implement a small piece of logic/algorithm. A function must exhibit SRP (high cohesion)
+A function may receive arguments
+A function may return acknowledgement or result.
+For example, sqrt() returns result
+prinft() in C returns acknowledgement.
+
+---
+
+DAY8 MONDAY 13-07-2026
+FUNCTION CALL STACK
+
+Special Purpose Registers:
+IR: Instruction Register
+It stores address of the instruction that is getting executed
+PC: Address of the next instruction to be executed is stored in Program counter
+FP: Frame Pointer
+It holds address of the the frame of the function that is currently getting executed
+SP: Stack Pointer
+It holds address of the top frame in the Stack
+FRAME: A frame is memory allocated to a function during runtime. It has 4 data in it.
+  1. The function parameters
+  2. The local variables
+  3. return address
+  4. Addresses of the called functions
+MDR
+MAR
+Accumalator: It is used to store intermediate results with in the same statement.
+-------------------------------------------------------------
+
+def goa():
+  print('I came to enjoy the beaches')
+  mumbai('good vibes')
+  print('I came to goa to enjoy the Cruise')
+
+def mumbai(param):
+  print('I came to Mumbai to learn Stck Markets')
+  vadodara()
+  print('I came back to Mumbai to enjoy the Vada Paav')
+
+def vadodara():
+  my_age = 40
+  print('I came to Vadodara to enjoy India's 1st Bullet train and to buy Diamonds')
+
+print('I am at home')
+goa() # address of goa function  675
+print('I am back home')
+---
+
+main() should call run_app()
+run_app() calls run_menu()
+run_menu() takes the choice from run_app() and runs that functionality as per choice.
+For every choice the user makes and that functionality has run, the menu should be displayed again until the user whishes to quit the App.
