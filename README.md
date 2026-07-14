@@ -695,3 +695,59 @@ main() should call run_app()
 run_app() calls run_menu()
 run_menu() takes the choice from run_app() and runs that functionality as per choice.
 For every choice the user makes and that functionality has run, the menu should be displayed again until the user whishes to quit the App.
+
+---
+DAY9 TUESDAY 14-07-2026
+
+## DATA STRUCTURES:
+
+int num1 = 0, num2 = 0, num3 = 0;
+
+num3      This gives value of num3
+&num3     This gives address of num3
+&num3 + 1 `This gives address of next integer value in memory. That might be num2 (We are making a blind and dangerous assumption here)
+*(&num3+1) Here we get the value of num2
+
+int n1 = 0, n2 = 0, n3 = 0, n4 = 5, n5 = 10;
+int n1, n2, ..... n50;
+int numbers[500];
+Using index we can differentiate all 500 variables in ```numbers```
+The index starts from 0 and goes upto n-1 where n is the size/length of the array.
+Here, all the 500 variables/values are stored in contigious memory locations. That is, there is no gap in between any 2 consecutive elements/values.
+
+1st element in the array is accessed as numbers[0]
+mth element in the array is accessed as numbers[m-1]
+So, we can access any element in the array randomly. i.e., without use of itearations. Thus accessing (LookUp) an element in an array is One unit time. Thus the efficiency is O(1)
+Thus an Array is time efficient Data Structure.
+Array is an memory inefficiecnt DS.
+
+prompt/input/scanf/cin The ```size```
+
+```
+float *ptr = new float[size];
+float[] array = new float[size];
+```
+
+class Node:
+    def __init__(self, data = ''):
+      self.data = data
+      self.link = None
+
+class LinkedList:
+    def __init__(self):
+        self.head = None
+    
+    def insert(self):
+        pass
+
+    def delete_node(self):
+        pass
+
+    def update(self):
+        pass
+
+    def search(self, element = '')
+        pass
+
+    def list(self):
+        pass
