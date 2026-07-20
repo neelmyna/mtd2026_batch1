@@ -663,32 +663,35 @@ It holds address of the the frame of the function that is currently getting exec
 SP: Stack Pointer
 It holds address of the top frame in the Stack
 FRAME: A frame is memory allocated to a function during runtime. It has 4 data in it.
-  1. The function parameters
-  2. The local variables
-  3. return address
-  4. Addresses of the called functions
-MDR
-MAR
-Accumalator: It is used to store intermediate results with in the same statement.
--------------------------------------------------------------
+
+1. The function parameters
+2. The local variables
+3. return address
+4. Addresses of the called functions
+   MDR
+   MAR
+   Accumalator: It is used to store intermediate results with in the same statement.
+
+---
 
 def goa():
-  print('I came to enjoy the beaches')
-  mumbai('good vibes')
-  print('I came to goa to enjoy the Cruise')
+print('I came to enjoy the beaches')
+mumbai('good vibes')
+print('I came to goa to enjoy the Cruise')
 
 def mumbai(param):
-  print('I came to Mumbai to learn Stck Markets')
-  vadodara()
-  print('I came back to Mumbai to enjoy the Vada Paav')
+print('I came to Mumbai to learn Stck Markets')
+vadodara()
+print('I came back to Mumbai to enjoy the Vada Paav')
 
 def vadodara():
-  my_age = 40
-  print('I came to Vadodara to enjoy India's 1st Bullet train and to buy Diamonds')
+my_age = 40
+print('I came to Vadodara to enjoy India's 1st Bullet train and to buy Diamonds')
 
 print('I am at home')
-goa() # address of goa function  675
+goa() # address of goa function 675
 print('I am back home')
+
 ---
 
 main() should call run_app()
@@ -697,21 +700,22 @@ run_menu() takes the choice from run_app() and runs that functionality as per ch
 For every choice the user makes and that functionality has run, the menu should be displayed again until the user whishes to quit the App.
 
 ---
+
 DAY9 TUESDAY 14-07-2026
 
 ## DATA STRUCTURES:
 
 int num1 = 0, num2 = 0, num3 = 0;
 
-num3      This gives value of num3
-&num3     This gives address of num3
+num3 This gives value of num3
+&num3 This gives address of num3
 &num3 + 1 `This gives address of next integer value in memory. That might be num2 (We are making a blind and dangerous assumption here)
-*(&num3+1) Here we get the value of num2
+\*(&num3+1) Here we get the value of num2
 
 int n1 = 0, n2 = 0, n3 = 0, n4 = 5, n5 = 10;
 int n1, n2, ..... n50;
 int numbers[500];
-Using index we can differentiate all 500 variables in ```numbers```
+Using index we can differentiate all 500 variables in `numbers`
 The index starts from 0 and goes upto n-1 where n is the size/length of the array.
 Here, all the 500 variables/values are stored in contigious memory locations. That is, there is no gap in between any 2 consecutive elements/values.
 
@@ -721,7 +725,7 @@ So, we can access any element in the array randomly. i.e., without use of iteara
 Thus an Array is time efficient Data Structure.
 Array is an memory inefficiecnt DS.
 
-prompt/input/scanf/cin The ```size```
+prompt/input/scanf/cin The `size`
 
 ```
 float *ptr = new float[size];
@@ -729,14 +733,14 @@ float[] array = new float[size];
 ```
 
 class Node:
-    def __init__(self, data = ''):
-      self.data = data
-      self.link = None
+def **init**(self, data = ''):
+self.data = data
+self.link = None
 
 class LinkedList:
-    def __init__(self):
-        self.head = None
-    
+def **init**(self):
+self.head = None
+
     def insert(self):
         pass
 
@@ -751,3 +755,131 @@ class LinkedList:
 
     def list(self):
         pass
+
+---
+
+DAY10 15-07-2026 WEDNESDAY
+
+Linear Search
+Binary Search.
+Insertion Sort
+Quick Sort
+Heap Sort
+Merge Sort
+Bucket Sort
+Redox Sort
+Radix Sort (Non comaparison sorting)
+
+---
+
+DAY12 18-07-2026 SATURDAY
+
+- Briefly describe how the algorithm works. Use Simulation/Visualization
+- Now Write the algorithm. Step by Step procedure. Discuss the strategy (divide and conquer or brute force etc.)
+- Write the Pseudocode
+- Now discuss different possibilities (I/P data structure is Almost sorted, fully sorted, randomly sorted, small in size, big in size and combinations)
+- Thus discuss the efficiencies (Mathematically)
+- Use Flow chart to make them understand the debugging
+- Optimization techniques
+- Code it! (Imeplement) This is the only step where we talk about programming or the language
+- Application(s) of the algorithm
+- Comparison with its peers.
+
+(n-1) + (n-2) + (n-3) + ..... 3 + 2 + (n - (n - 1))
+= n2 -2n + 1
+= O(n2)
+
+array = 23 45 4 21 77 10 15
+
+for i from 1 to N-1 do: // for each element in unsorted array
+element = array[i] // element to be inserted
+j = i - 1
+while element < array[j] and j >= 0:
+array[j+1] = array[j]
+j--
+array[j+1] = element
+
+[0, k] is the number of shifts where k is number of elements in the sorted array.
+
+---
+
+## Binary Search
+
+do while loop
+
+Pre requisite: Array must be sorted and also we must the order in which it is sorted.
+
+We go to mid of the element (median) and check if it is the search element.
+If yes , everything fine we got the element.
+
+Note that by reaching the mid element we have divided the array in 2 equal halves.
+
+Otherwise check if the element is in 1st half (left half) or 2nd half of the array.
+Accordingly set the search array as 1st or 2nd half.
+
+101
+51st element is the search element.
+Thus 51 elements are eleminated from the search area.
+
+Possibilities:
+Best case scenario:
+The element might be the exact mid element of the given array. Thus the number of searches is 1. So, the BCE of Binary search is O(1)
+
+1. Element not found
+   1. search element smaller than the 1st element.
+   2. search element bigger than the last element.
+   3. Search element is in between consecutive 2 elements of the array.
+
+2. Element found:
+   1. Mid element of the given array
+   2. 1st element
+   3. Last element
+   4. In between element.
+
+array = [some elements]
+low  = 0  // index of 1st element
+Read search_element
+high = N-1 // N is size of array.
+do
+  mid = (low + high) // 2 # Integer division
+  if arrayt[mid] == search_element then:
+    return mid as index of search_element
+  else if search_element < array[mid] then:
+    high = mid - 1
+  else:
+    low = mid + 1
+while low <= high;
+
+
+Worst case efficienfy of Binary Seacrh:
+
+The efficiency depends on number of iterations of the loops in the algorithm.
+Since we dont know the number of iterations in Binary search, because we are using while or do-while loop, we assume it to be X
+
+In 1st iteration, number of elements is N
+Thus, in consecutive iterations, the number of elements are:
+
+N     N/2     N/4     N/8      ......     8      4      2       1
+2(X-1)                                            2(2)   2(1)   2(0)
+
+N = 2 pow X-1
+N = 2^X
+X = LogN
+
+100000
+50000
+25000
+12500
+6250
+3125
+1562
+731
+365
+182
+91
+45
+22
+11
+5
+2
+1
