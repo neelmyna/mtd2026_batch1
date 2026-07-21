@@ -883,3 +883,24 @@ X = LogN
 5
 2
 1
+---
+I/P
+O/P
+Logic:
+
+Read N
+Read N elements of the list
+
+Implement Partition logic
+
+Print the O/P (partitioned list)
+
+
+
+n = input()
+print(f'Enter {N} elements')
+numbers = [int(element) for element in input().split()]
+numbers = numbers[:n]
+
+partition_list(numbers)
+print('The Partitioned array is', numbers)
